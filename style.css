@@ -426,15 +426,37 @@ li :hover{
   
 
 @media only screen and (max-width:590px){
-  nav {
-    font-size: 14px;
-    height: 12vh;
-  }
+  nav{
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+    height: 24vh;
 
+}
+nav ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  display: block;
+}
+
+main {
+  font-size: 18px;
+ 
+}
+ 
   #about{
     height: 120vh;
   }
-  
+  .about_div{
+    width:80%;
+  }  
+
+
 
   #contact{
     height: 85vh;
@@ -446,6 +468,4 @@ li :hover{
       padding: 0px 50px;
 
 }
-
-
 }
