@@ -1,0 +1,445 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    padding:0px;
+    margin: 0px;
+}
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main main"
+      "h1_project  h1_project h1_project h1_project "
+      "content1 content2 content3 content4"
+      "align_show align_show align_show align_show"
+      "about about about about"
+      "contact contact contact contact"
+      "footer footer footer footer";
+    height: 1vh;
+  }
+  
+  /* NAVBAR */
+nav {
+    background: rgb(40, 231, 238);
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    height:8vh;
+   position: fixed;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   text-transform: uppercase;
+   font-weight: 800;
+   border-bottom: solid #035974;
+   
+  }
+nav ul{
+    display: flex;
+    margin: 0 2em;
+
+ } 
+nav li{
+    list-style-type: none;
+    display: list-item;
+    margin: 15px;
+
+
+}
+.link_nav{
+    text-decoration: none;
+    color:#033074 ;
+    letter-spacing:4;
+    display: block;
+    padding: 15px 15px 5px 15px;
+    background-image: linear-gradient(#035974, #035974), linear-gradient(rgb(40, 231, 238), rgb(40, 231, 238));
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+li :hover{
+    margin-top: 9px;
+    background-size: 80% 3px, auto;
+}
+
+    /* Main CONTENT */
+  main {
+    background:#035974;
+    grid-area: main;
+    height: 70vh;
+    letter-spacing: 4;
+    word-spacing: 1.2;
+    padding-top: 30vh;
+    font-size: 24px;
+    line-height: 1.7;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+ }
+
+
+ #h1_project{
+  color: #033074;
+  grid-area: h1_project;
+  background-color: rgb(40, 231, 238);
+  text-align: center;
+  height: 6vh;
+  padding-top: 20px;
+  
+}
+
+
+  /* Project CONTENT */
+  #content1 {
+    background: #035974;
+    grid-area: content1;
+    height: 60vh;
+    font-size: 16px;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .align_project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+
+  .project_img{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  
+  }
+
+  .links{
+    text-decoration: none;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin:5.5px;
+    background-image: linear-gradient(white, white);
+    background-size: 0% 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+  }
+  
+  .links:hover{
+    margin-top: 8px;
+    background-size: 100% 2px, auto;
+  }
+
+
+    /* Proiect 2 */
+ #content2 {
+    background: #033074;
+    grid-area: content2;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #content2 .links{
+    color: rgb(40, 231, 238);
+  }
+
+  #content2 .project_img{
+    max-width: 364px;
+  }
+
+  /* Proiect 3 */
+  #content3 {
+    background: #035974;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    grid-area: content3;
+  }
+
+  #content3 .align_project{
+    padding-top: 65px;
+  }
+  #content3 .project_img{
+    max-width: 350px;
+  }
+  
+
+  /* Proiect 4 */
+  #content4{
+    background: #033074;
+    grid-area: content4;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  #content4 .align_project{
+    padding-top: 80px;
+  }
+  #content4 .project_img{
+    max-width: 368px;
+  }
+  
+
+
+/* Show All */
+
+#align_show{
+  grid-area: align_show;
+  background-color: rgb(40, 231, 238);
+  display: flex;
+  justify-content: center;
+}
+.show_all{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.show_all2 {
+  text-decoration: none;
+  color: #033074;
+  padding: 10px;
+  margin: 10px;
+  border: solid #033074;
+  border-radius: 20px;
+  font-weight: 800;
+  letter-spacing: 1.2;
+}
+
+.show_all :hover{
+  background-color: #033074;
+  color: rgb(40, 231, 238);
+  border: solid #035974;
+  text-shadow: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+  /* About Content */
+  #about{
+    background: #035974;
+    grid-area: about;
+    height: 70vh;
+    
+  }
+
+  .about_me{
+      color: rgb(40, 231, 238);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     margin-top: 35px;
+     text-align: center;
+  }
+
+.center_about{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.about_div{
+    display: flex;
+    border: solid rgb(40, 231, 238);
+    width: 50%;
+    align-items: center;
+    color: #033074;
+    background-color: rgb(40, 231, 238);
+    font-size: 16px;
+    letter-spacing: 1.4;
+    border-radius: 20px;
+    letter-spacing: 1.2;
+    line-height: 1.6;
+}
+
+.p_about{
+    font-size: 16px;
+    letter-spacing: 1.4;
+    letter-spacing: 1.2;
+    line-height: 1.6;
+    padding: 25px;
+}
+  .photo_about{
+      width: 100%;
+      max-width: 150px;
+      border-radius: 50%;
+      padding-left: 10px;
+  }
+.skills_center{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  
+}
+.skills{
+    border: solid rgb(40, 231, 238);
+    width: 50%;
+    color:rgb(40, 231, 238);
+    border-radius: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.skills h1{
+    text-align: center;
+}
+.skills ul{
+    padding-left: 30px;
+    margin: 20px;
+}
+.skills li{
+    margin: 20px;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.logo{
+    width: 100%;
+    max-width: 16px;
+    margin-top:20px;
+    padding-right: 10px;
+}
+
+/* Contact Content */
+  #contact{
+    background: rgb(40, 231, 238);
+    grid-area: contact;
+    height: 40vh;
+    letter-spacing: 1.4;
+    letter-spacing: 1.2;
+    line-height: 1.6;
+  }
+
+#contact h1{
+    text-align: center;
+    margin-top: 40px;
+    color: #033074;
+}
+
+.p_center{
+    display: flex;
+    justify-content: center;
+    color: #033074;
+    margin-top: 20px;
+}
+.contact_p2{
+    width: 50%;
+    text-align: center;
+    font-size:16px;
+}
+.center_contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.contact_media{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: solid #035974;
+    border-radius: 30px;
+    margin: 10px;
+    background-color:rgb(40, 231, 238);
+}
+.contact_text{
+    text-decoration: none;
+    color: #033074;
+    padding: 10px; 
+    font-size: 15px; 
+}
+
+ .contact_img{
+     width: 100%;
+     max-width: 40px;
+    
+ } 
+
+ /* FOOTER */
+  footer {
+    background: #035974;
+    grid-area: footer;
+    color: rgb(40, 231, 238);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: end;
+    padding-right: 2%;
+    font-size: 20px;
+  }
+  
+  
+  @media only screen and (max-width: 1024px){
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas:
+        "nav"
+        "main"
+        "h1_project"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "align_show"
+        "about"
+        "contact"
+        "footer";
+    }
+
+  }
+  
+ @media only screen and (max-width: 908px){
+ #about{
+   height: 100vh;
+ }
+
+ }
+
+
+ @media only screen and (max-width:750px) {
+      nav a{
+        font-size: 19px;
+      }
+    
+    .about_div{
+        display: inline;
+  
+    }
+
+    .photo_about{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+ }
+
+
+ @media only screen and  (max-width: 720px) {
+  nav a{
+    font-size: 14px;
+  }
+
+ }
+  
+
+@media only screen and (max-width:590px){
+  nav {
+    font-size: 14px;
+    height: 12vh;
+  }
+
+  #about{
+    height: 120vh;
+  }
+  
+
+  #contact{
+    height: 60vh;
+  }
+    .contact_text{
+        font-size: 14px;
+      }
+}
