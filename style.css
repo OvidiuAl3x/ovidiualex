@@ -437,9 +437,15 @@ li :hover{
   
 
   #contact{
-    height: 60vh;
+    height: 85vh;
   }
-    .contact_text{
-        font-size: 14px;
-      }
+  .center_contact{
+       display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0px 50px;
+
+}
+
+
 }
